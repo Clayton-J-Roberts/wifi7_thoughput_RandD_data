@@ -1,19 +1,43 @@
 import json
 import matplotlib.pyplot as plt
-from tkinter import Tk, filedialog, simpledialog
 import os
 from datetime import datetime
 
-def pick_files():
-    root = Tk()
-    root.withdraw()
-    file_paths = filedialog.askopenfilenames(
-        title="Select up to 3 JSON files",
-        filetypes=[("JSON files", "*.json")]
-    )
-    return root, file_paths[:3]  # Return root window and selected files
+# GUI tools
+try:
+    from tkinter import Tk, filedialog, simpledialog
+    GUI_AVAILABLE = True
+except ImportError:
+    GUI_AVAILABLE = False
+
+def pick_files_gui():
+    try:
+        root = Tk()
+        root.withdraw()
+        file_paths = filedialog.askopenfilenames(
+            title="Select up to 3 JSON files",
+            filetypes=[("JSON files", "*.json")]
+        )
+        return root, file_paths[:3]
+    except Exception as e:
+        print(f"[DEBUG] GUI file picker failed: {e}")
+        return None, []
+
+def pick_files_cli():
+    print("GUI not available. Switching to CLI mode.")
+    file_paths = []
+    for i in range(3):
+        path = input(f"Enter path to JSON file #{i+1} (or leave blank to stop): ").strip()
+        if not path:
+            break
+        if os.path.exists(path) and path.endswith('.json'):
+            file_paths.append(path)
+        else:
+            print(f"Invalid path or not a JSON file: {path}")
+    return None, file_paths
 
 def process_json(file_path, display_name):
+    print(f"[DEBUG] Processing file: {file_path} with name: {display_name}")
     try:
         with open(file_path, "r") as f:
             data = json.load(f)
@@ -52,13 +76,15 @@ def process_json(file_path, display_name):
         avg_interval_duration = sum(interval_durations) / len(interval_durations)
         total_test_duration = intervals[-1]["sum"]["end"]
 
-        # Print and save summary
         summary_data = {
             "First interval duration": f"{first_interval_duration:.2f} sec",
             "Average interval duration": f"{avg_interval_duration:.2f} sec",
             "Total test duration": f"{total_test_duration:.2f} sec",
             "Average throughput": f"{avg_throughput:.2f} Mbps",
-            "Throughput degradation": f"{degradation_percentage:.2f}%"
+            "Throughput degradation": (
+                f"{degradation_percentage:.2f}%" if degradation_percentage > 0
+                else f"Gain: {abs(degradation_percentage):.2f}%"
+            )
         }
 
         print(f"\nResults for {display_name}")
@@ -73,6 +99,9 @@ def process_json(file_path, display_name):
 
     except (json.JSONDecodeError, FileNotFoundError) as e:
         print(f"Error processing {file_path}: {e}")
+        return None
+    except Exception as e:
+        print(f"Unexpected error processing {file_path}: {e}")
         return None
 
 def plot_comparison(data_sets):
@@ -95,7 +124,6 @@ def plot_comparison(data_sets):
                      linewidth=2,
                      markersize=6)
 
-            # Final point annotation
             plt.annotate(f"{label}",
                          xy=(times[-1], bps[-1]),
                          xytext=(5, 5),
@@ -104,7 +132,6 @@ def plot_comparison(data_sets):
                          color=color,
                          weight='bold')
 
-            # Max/Min annotations
             max_val = max(bps)
             min_val = min(bps)
             max_idx = bps.index(max_val)
@@ -127,7 +154,6 @@ def plot_comparison(data_sets):
                          fontsize=8,
                          color=color)
 
-            # Average line
             avg = sum(bps) / len(bps)
             plt.axhline(y=avg, color=color, linestyle='dotted', linewidth=1)
             plt.text(times[0] - 0.5, avg, f"Avg: {avg:.1f} Mbps", color=color, fontsize=8, va='bottom')
@@ -153,19 +179,35 @@ def plot_comparison(data_sets):
         print(f"Error creating plot: {e}")
 
 if __name__ == "__main__":
-    root, selected_files = pick_files()
+    if GUI_AVAILABLE:
+        root, selected_files = pick_files_gui()
+    else:
+        root, selected_files = pick_files_cli()
+
     if selected_files:
         results = []
         for i, file in enumerate(selected_files):
-            name = simpledialog.askstring("Input", f"Enter a name for test file {i+1}:", parent=root)
-            if name:
-                result = process_json(file, name)
-                if result:
-                    results.append(result)
-            else:
-                print(f"No name entered for file {i+1}, skipping.")
+            try:
+                if GUI_AVAILABLE:
+                    name = simpledialog.askstring("Input", f"Enter a name for test file {i+1}:", parent=root)
+                else:
+                    name = input(f"Enter a name for test file {i+1}: ").strip()
+
+                if name:
+                    result = process_json(file, name)
+                    if result:
+                        results.append(result)
+                else:
+                    print(f"No name entered for file {i+1}, skipping.")
+            except Exception as e:
+                print(f"[DEBUG] Error during input or processing: {e}")
+
         if results:
             plot_comparison(results)
+        else:
+            print("[DEBUG] No valid data collected.")
     else:
         print("No files selected.")
-    root.destroy()
+
+    if GUI_AVAILABLE and root:
+        root.destroy()
