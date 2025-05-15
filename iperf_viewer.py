@@ -2,6 +2,7 @@ import json
 import matplotlib.pyplot as plt
 from tkinter import Tk, filedialog, simpledialog
 import os
+from datetime import datetime
 
 def pick_files():
     root = Tk()
@@ -76,20 +77,77 @@ def process_json(file_path, display_name):
 
 def plot_comparison(data_sets):
     try:
-        plt.figure(figsize=(12, 6))
-        for times, bps, label in data_sets:
-            plt.plot(times, bps, marker='o', label=label)
+        plt.style.use('seaborn-v0_8-darkgrid')
+        plt.figure(figsize=(15, 8))
 
-        plt.title("Throughput Comparison")
-        plt.xlabel("Time (seconds)")
-        plt.ylabel("Throughput (Mbps)")
-        plt.grid(True)
-        plt.legend()
-        plt.tight_layout()
-        plot_filename = "comparison_plot.png"
-        plt.savefig(plot_filename)
+        line_styles = ['-', '--', '-.']
+        colors = ['#2196F3', '#E91E63', '#4CAF50']
+
+        for i, (times, bps, label) in enumerate(data_sets):
+            color = colors[i % len(colors)]
+            linestyle = line_styles[i % len(line_styles)]
+
+            plt.plot(times, bps,
+                     marker='o',
+                     label=label,
+                     linestyle=linestyle,
+                     color=color,
+                     linewidth=2,
+                     markersize=6)
+
+            # Final point annotation
+            plt.annotate(f"{label}",
+                         xy=(times[-1], bps[-1]),
+                         xytext=(5, 5),
+                         textcoords='offset points',
+                         fontsize=9,
+                         color=color,
+                         weight='bold')
+
+            # Max/Min annotations
+            max_val = max(bps)
+            min_val = min(bps)
+            max_idx = bps.index(max_val)
+            min_idx = bps.index(min_val)
+            percent_drop = ((max_val - min_val) / max_val) * 100 if max_val != 0 else 0
+
+            plt.annotate(f"Max: {max_val:.1f} Mbps",
+                         xy=(times[max_idx], max_val),
+                         xytext=(0, 15),
+                         textcoords='offset points',
+                         arrowprops=dict(arrowstyle='->', color=color),
+                         fontsize=8,
+                         color=color)
+
+            plt.annotate(f"Min: {min_val:.1f} Mbps\n↓ {percent_drop:.1f}%",
+                         xy=(times[min_idx], min_val),
+                         xytext=(0, -30),
+                         textcoords='offset points',
+                         arrowprops=dict(arrowstyle='->', color=color),
+                         fontsize=8,
+                         color=color)
+
+            # Average line
+            avg = sum(bps) / len(bps)
+            plt.axhline(y=avg, color=color, linestyle='dotted', linewidth=1)
+            plt.text(times[0] - 0.5, avg, f"Avg: {avg:.1f} Mbps", color=color, fontsize=8, va='bottom')
+
+        plt.title("Network Throughput Comparison Over Time", fontsize=16, pad=20)
+        plt.xlabel("Time Interval (seconds)", fontsize=12, labelpad=10)
+        plt.ylabel("Throughput (Mbps)", fontsize=12, labelpad=10)
+        plt.grid(True, which='major', linestyle='-', alpha=0.5)
+        plt.grid(True, which='minor', linestyle=':', alpha=0.2)
+        plt.minorticks_on()
+        plt.legend(fontsize=10, bbox_to_anchor=(1.02, 1), loc='upper left')
+        plt.xticks(fontsize=10)
+        plt.yticks(fontsize=10)
+        plt.tight_layout(rect=[0, 0, 0.95, 1])
+
+        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+        plot_filename = f"comparison_plot_{timestamp}.png"
+        plt.savefig(plot_filename, dpi=300, bbox_inches='tight')
         plt.show()
-        plt.close()  # Properly close the figure
+        plt.close()
         print(f"\nSaved comparison plot to: {os.path.abspath(plot_filename)}")
     except Exception as e:
         print(f"Error creating plot: {e}")
@@ -110,4 +168,4 @@ if __name__ == "__main__":
             plot_comparison(results)
     else:
         print("No files selected.")
-    root.destroy()  # Clean up Tk window
+    root.destroy()
