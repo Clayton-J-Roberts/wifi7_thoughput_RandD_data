@@ -1,0 +1,5 @@
+First interval duration: 1.00 sec
+Average interval duration: 1.00 sec
+Total test duration: 1800.00 sec
+Average throughput: 282.91 Mbps
+Throughput degradation: Gain: 47.69%
