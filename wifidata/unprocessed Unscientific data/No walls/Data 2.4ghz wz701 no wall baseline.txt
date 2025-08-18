@@ -1,6 +1,20 @@
-Data 2.4 wz701 no wall baseline test 1.5m
+Data 2.4 wz701 no wall baseline test1 1.5m
 
-Set 1 -
+No wall baseline 2.4Ghz test 1
+
+Server:
+Signal				Monitor
+Latest Signal:			-31 dbm
+Min. Signal:			-82 dbm
+Max. Signal:			-18 dbm
+
+
+Client:
+Signal				Monitor
+Latest Signal:			-24 dbm
+Min. Signal:			-26 dbm
+Max. Signal:			-22 dbm
+
 2025-08-05 01:05:56 PM /srv/samba/shared/ OPEN,ISDIR
 2025-08-05 01:05:56 PM /srv/samba/shared/ ACCESS,ISDIR
 2025-08-05 01:05:56 PM /srv/samba/shared/ CLOSE_NOWRITE,CLOSE,ISDIR
@@ -308,21 +322,22 @@ Set 1 -
 2025-08-05 01:07:36 PM /srv/samba/shared/ ACCESS Unscientific_Data_24GHZ.bin
 2025-08-05 01:07:37 PM /srv/samba/shared/ CLOSE_NOWRITE,CLOSE Unscientific_Data_24GHZ.bin
 
-Server
+------------------------------------------------------------------------------------------------------------------------
+
+No wall baseline 2.4Ghz test 2
+
+server:
 Signal				Monitor
 Latest Signal:			-31 dbm
 Min. Signal:			-82 dbm
 Max. Signal:			-18 dbm
 
-
-Client
+Client:
 Signal				Monitor
 Latest Signal:			-24 dbm
-Min. Signal:			-26 dbm
-Max. Signal:			-22 dbm
+Min. Signal:			-86 dbm
+Max. Signal:			-21 dbm
 
-
-Set 2
 2025-08-05 01:23:08 PM /srv/samba/shared/ OPEN,ISDIR
 2025-08-05 01:23:08 PM /srv/samba/shared/ ACCESS,ISDIR
 2025-08-05 01:23:08 PM /srv/samba/shared/ CLOSE_NOWRITE,CLOSE,ISDIR
@@ -627,21 +642,23 @@ Set 2
 2025-08-05 01:24:40 PM /srv/samba/shared/ ACCESS Unscientific_Data_24GHZ.bin
 2025-08-05 01:24:42 PM /srv/samba/shared/ CLOSE_NOWRITE,CLOSE Unscientific_Data_24GHZ.bin
 
-server
+------------------------------------------------------------------------------------------------------------------------
+
+No wall baseline 2.4Ghz test 3
+
+Client:
+Signal				Monitor
+Latest Signal:			-26 dbm
+Min. Signal:			-87 dbm
+Max. Signal:			-21 dbm
+
+Server:
 Signal				Monitor
 Latest Signal:			-31 dbm
 Min. Signal:			-82 dbm
 Max. Signal:			-18 dbm
 
-Client
-Signal				Monitor
-Latest Signal:			-24 dbm
-Min. Signal:			-86 dbm
-Max. Signal:			-21 dbm
 
-
-
-Test 3
 2025-08-05 01:32:41 PM /srv/samba/shared/ OPEN Unscientific_Data_24GHZ.bin
 2025-08-05 01:32:41 PM /srv/samba/shared/ ACCESS Unscientific_Data_24GHZ.bin
 2025-08-05 01:32:41 PM /srv/samba/shared/ ACCESS Unscientific_Data_24GHZ.bin
@@ -942,19 +959,5 @@ Test 3
 2025-08-05 01:34:03 PM /srv/samba/shared/ ACCESS Unscientific_Data_24GHZ.bin
 2025-08-05 01:34:05 PM /srv/samba/shared/ ACCESS Unscientific_Data_24GHZ.bin
 2025-08-05 01:34:07 PM /srv/samba/shared/ CLOSE_NOWRITE,CLOSE Unscientific_Data_24GHZ.bin
-
-Client
-Signal				Monitor
-Latest Signal:			-26 dbm
-Min. Signal:			-87 dbm
-Max. Signal:			-21 dbm
-
-Server
-
-Signal				Monitor
-Latest Signal:			-31 dbm
-Min. Signal:			-82 dbm
-Max. Signal:			-18 dbm
-
 
 

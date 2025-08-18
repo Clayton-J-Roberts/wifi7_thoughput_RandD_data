@@ -1,20 +1,16 @@
 First Test: 1 wall 6ghz 
 
-Server
-Signal
-Monitor Signal	
-Monitor
+Server:
+Monitor         Signal
 Latest Signal	-42 dbm
-Min. Signal	-87 dbm
-Max. Signal	-26 dbm
+Min. Signal 	-87 dbm
+Max. Signal 	-26 dbm
 
-Client
-Signal
-Monitor Signal	
-Monitor
+Client:
+Monitor         Signal
 Latest Signal	-28 dbm
-Min. Signal	-31 dbm
-Max. Signal	-27 dbm
+Min. Signal 	-31 dbm
+Max. Signal 	-27 dbm
 
 2025-08-11 03:29:38 PM /srv/samba/shared/ OPEN Unscientific_Data_6GHZ.bin
 2025-08-11 03:29:38 PM /srv/samba/shared/ ACCESS Unscientific_Data_6GHZ.bin
@@ -320,24 +316,21 @@ Max. Signal	-27 dbm
 2025-08-11 03:29:52 PM /srv/samba/shared/ ACCESS Unscientific_Data_6GHZ.bin
 2025-08-11 03:29:56 PM /srv/samba/shared/ CLOSE_NOWRITE,CLOSE Unscientific_Data_6GHZ.bin
 
+------------------------------------------------------------------------------------------------------------------------
 
 Second Test
 
-Server
-Signal
-Monitor Signal	
-Monitor
+Server:
+Monitor         Signal
 Latest Signal	-41 dbm
-Min. Signal	-87 dbm
-Max. Signal	-26 dbm
+Min. Signal 	-87 dbm
+Max. Signal 	-26 dbm
 
-Client
-Signal
-Monitor Signal	
-Monitor
+Client:
+Monitor         Signal
 Latest Signal	-24 dbm
-Min. Signal	-60 dbm
-Max. Signal	-21 dbm
+Min. Signal 	-60 dbm
+Max. Signal 	-21 dbm
 
 2025-08-11 03:40:17 PM /srv/samba/shared/ OPEN Unscientific_Data_6GHZ.bin
 2025-08-11 03:40:18 PM /srv/samba/shared/ ACCESS Unscientific_Data_6GHZ.bin
@@ -607,23 +600,21 @@ Max. Signal	-21 dbm
 2025-08-11 03:40:31 PM /srv/samba/shared/ ACCESS Unscientific_Data_6GHZ.bin
 2025-08-11 03:40:35 PM /srv/samba/shared/ CLOSE_NOWRITE,CLOSE Unscientific_Data_6GHZ.bin
 
+-----------------------------------------------------------------------------------------------------------------------
+
 Test 3
 
-Server
-Signal
-Monitor Signal	
-Monitor
+Server:
+Monitor         Signal
 Latest Signal	-41 dbm
-Min. Signal	-87 dbm
-Max. Signal	-26 dbm
+Min. Signal 	-87 dbm
+Max. Signal 	-26 dbm
 
-Client
-Signal
-Monitor Signal	
-Monitor
+Client:
+Monitor         Signal
 Latest Signal	-28 dbm
-Min. Signal	-60 dbm
-Max. Signal	-21 dbm
+Min. Signal 	-60 dbm
+Max. Signal 	-21 dbm
 
 2025-08-11 03:44:03 PM /srv/samba/shared/ OPEN Unscientific_Data_6GHZ.bin
 2025-08-11 03:44:03 PM /srv/samba/shared/ ACCESS Unscientific_Data_6GHZ.bin

@@ -1,4 +1,21 @@
 Data 5ghz wz701 no wall baseline test 1.5m
+
+No wall baseline 2.4Ghz test 1
+
+Server:
+Signal				Monitor
+Latest Signal:			-45 dbm
+Min. Signal:			-50 dbm
+Max. Signal:			-32 dbm
+
+
+
+client:
+Signal				Monitor
+Latest Signal:			-30 dbm
+Min. Signal:			-91 dbm
+Max. Signal:			-28 dbm
+
 2025-08-05 01:47:32 PM /srv/samba/shared/ OPEN Unscientific_Data_5GHZ.bin
 2025-08-05 01:47:32 PM /srv/samba/shared/ ACCESS Unscientific_Data_5GHZ.bin
 2025-08-05 01:47:32 PM /srv/samba/shared/ ACCESS Unscientific_Data_5GHZ.bin
@@ -303,23 +320,22 @@ Data 5ghz wz701 no wall baseline test 1.5m
 2025-08-05 01:47:47 PM /srv/samba/shared/ ACCESS Unscientific_Data_5GHZ.bin
 2025-08-05 01:47:48 PM /srv/samba/shared/ CLOSE_NOWRITE,CLOSE Unscientific_Data_5GHZ.bin
 
-Server
+-----------------------------------------------------------------------------------------------------------------------
+
+No wall baseline 2.4Ghz test 2
+
+Server:
 Signal				Monitor
-Latest Signal:			-45 dbm
+Latest Signal:			-44 dbm
 Min. Signal:			-50 dbm
 Max. Signal:			-32 dbm
 
-
-
-client
+Client:
 Signal				Monitor
 Latest Signal:			-30 dbm
 Min. Signal:			-91 dbm
 Max. Signal:			-28 dbm
 
-
-
-Test 2
 2025-08-05 01:51:32 PM /srv/samba/shared/ OPEN Unscientific_Data_5GHZ.bin
 2025-08-05 01:51:32 PM /srv/samba/shared/ ACCESS Unscientific_Data_5GHZ.bin
 2025-08-05 01:51:32 PM /srv/samba/shared/ ACCESS Unscientific_Data_5GHZ.bin
@@ -585,20 +601,21 @@ Test 2
 2025-08-05 01:51:46 PM /srv/samba/shared/ ACCESS Unscientific_Data_5GHZ.bin
 2025-08-05 01:51:50 PM /srv/samba/shared/ CLOSE_NOWRITE,CLOSE Unscientific_Data_5GHZ.bin
 
-Server
+-----------------------------------------------------------------------------------------------------------------------
+
+No wall baseline 2.4Ghz test 3
+
+Server:
 Signal				Monitor
-Latest Signal:			-44 dbm
+Latest Signal:			-42 dbm
 Min. Signal:			-50 dbm
 Max. Signal:			-32 dbm
 
-Client
+Client:
 Signal				Monitor
 Latest Signal:			-30 dbm
 Min. Signal:			-91 dbm
 Max. Signal:			-28 dbm
-
-
-Test 3
 
 2025-08-05 01:53:18 PM /srv/samba/shared/ OPEN Unscientific_Data_5GHZ.bin
 2025-08-05 01:53:18 PM /srv/samba/shared/ ACCESS Unscientific_Data_5GHZ.bin
@@ -853,15 +870,3 @@ Test 3
 2025-08-05 01:53:32 PM /srv/samba/shared/ ACCESS Unscientific_Data_5GHZ.bin
 2025-08-05 01:53:32 PM /srv/samba/shared/ ACCESS Unscientific_Data_5GHZ.bin
 2025-08-05 01:53:35 PM /srv/samba/shared/ CLOSE_NOWRITE,CLOSE Unscientific_Data_5GHZ.bin
-
-Server
-Signal				Monitor
-Latest Signal:			-42 dbm
-Min. Signal:			-50 dbm
-Max. Signal:			-32 dbm
-
-Client
-Signal				Monitor
-Latest Signal:			-30 dbm
-Min. Signal:			-91 dbm
-Max. Signal:			-28 dbm
