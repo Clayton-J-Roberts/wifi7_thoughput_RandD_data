@@ -1,22 +1,16 @@
 First Test 1 wall 5Ghz
 
-Server 
-
-Signal
-Monitor Signal	
-Monitor
+Server:
+Monitor         Signal
 Latest Signal	-39 dbm
-Min. Signal	-87 dbm
-Max. Signal	-37 dbm
+Min. Signal 	-87 dbm
+Max. Signal 	-37 dbm
 
-Client
-
-Signal
-Monitor Signal	
-Monitor
+Client:
+Monitor         Signal
 Latest Signal	-33 dbm
-Min. Signal	-92 dbm
-Max. Signal	-30 dbm
+Min. Signal 	-92 dbm
+Max. Signal 	-30 dbm
 
 2025-08-11 02:21:03 PM /srv/samba/shared/ OPEN Unscientific_Data_5GHZ.bin
 2025-08-11 02:21:03 PM /srv/samba/shared/ ACCESS Unscientific_Data_5GHZ.bin
@@ -322,22 +316,21 @@ Max. Signal	-30 dbm
 2025-08-11 02:21:30 PM /srv/samba/shared/ ACCESS Unscientific_Data_5GHZ.bin
 2025-08-11 02:21:34 PM /srv/samba/shared/ CLOSE_NOWRITE,CLOSE Unscientific_Data_5GHZ.bin
 
+-----------------------------------------------------------------------------------------------------------------------
+
 Test 2 
 
-Server
-Monitor Signal	
-Monitor
+Server:
+Monitor         Signal
 Latest Signal	-54 dbm
-Min. Signal	-87 dbm
-Max. Signal	-37 dbm
+Min. Signal 	-87 dbm
+Max. Signal 	-37 dbm
 
-Client
-Signal
-Monitor Signal	
-Monitor
+Client:
+Monitor         Signal
 Latest Signal	-33 dbm
-Min. Signal	-92 dbm
-Max. Signal	-30 dbm
+Min. Signal 	-92 dbm
+Max. Signal 	-30 dbm
 
 2025-08-11 02:27:32 PM /srv/samba/shared/ OPEN Unscientific_Data_5GHZ.bin
 2025-08-11 02:27:32 PM /srv/samba/shared/ ACCESS Unscientific_Data_5GHZ.bin
@@ -591,24 +584,21 @@ Max. Signal	-30 dbm
 2025-08-11 02:27:56 PM /srv/samba/shared/ ACCESS Unscientific_Data_5GHZ.bin
 2025-08-11 02:28:00 PM /srv/samba/shared/ CLOSE_NOWRITE,CLOSE Unscientific_Data_5GHZ.bin
 
+-----------------------------------------------------------------------------------------------------------------------
 
 Test 3
 
-Server
-Signal
-Monitor Signal	
-Monitor
+Server:
+Monitor          Signal
 Latest Signal	-57 dbm
-Min. Signal	-87 dbm
-Max. Signal	-37 dbm
+Min. Signal 	-87 dbm
+Max. Signal 	-37 dbm
 
-Client
-Signal
-Monitor Signal	
-Monitor
+Client:
+Monitor         Signal
 Latest Signal	-33 dbm
-Min. Signal	-92 dbm
-Max. Signal	-30 dbm
+Min. Signal 	-92 dbm
+Max. Signal 	-30 dbm
 
 2025-08-11 02:30:53 PM /srv/samba/shared/ OPEN Unscientific_Data_5GHZ.bin
 2025-08-11 02:30:53 PM /srv/samba/shared/ ACCESS Unscientific_Data_5GHZ.bin

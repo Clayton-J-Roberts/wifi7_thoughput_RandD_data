@@ -1,23 +1,17 @@
 Test 1 wall 2.4
 
-Server
-
-Signal
-Monitor Signal
-Monitor
-Latest Signal	-44 dbm
-Min. Signal	-47 dbm
-Max. Signal	-42 dbm
+Server:
+Monitor         Signal
+Latest Signal   -44 dbm
+Min. Signal	    -47 dbm
+Max. Signal	    -42 dbm
 
 
-Client
-
-signal
-Monitor Signal
-Monitor
-Latest Signal	-28 dbm
-Min. Signal	-84 dbm
-Max. Signal	-24 dbm
+Client:
+Monitor         Signal
+Latest Signal   -28 dbm
+Min. Signal	    -84 dbm
+Max. Signal	    -24 dbm
 
 2025-08-11 01:37:38 PM /srv/samba/shared/ OPEN Unscientific_Data_24GHZ.bin
 2025-08-11 01:37:38 PM /srv/samba/shared/ ACCESS Unscientific_Data_24GHZ.bin
@@ -323,25 +317,23 @@ Max. Signal	-24 dbm
 2025-08-11 01:39:15 PM /srv/samba/shared/ ACCESS Unscientific_Data_24GHZ.bin
 2025-08-11 01:39:16 PM /srv/samba/shared/ CLOSE_NOWRITE,CLOSE Unscientific_Data_24GHZ.bin
 
+------------------------------------------------------------------------------------------------------------------------
+
 Test 2 wall 2.4
 
-Server
+Server:
 
-Signal
-Monitor Signal
-Monitor
-Latest Signal	-41 dbm
-Min. Signal	-76 dbm
-Max. Signal	-36 bm
+Monitor         Signal
+Latest Signal   -41 dbm
+Min. Signal	    -76 dbm
+Max. Signal 	-36 bm
 
-Client
+Client:
 
-Signal
-Monitor Signal
-Monitor
-Latest Signal	-26 dbm
-Min. Signal	-84 dbm
-Max. Signal	-24 dbm
+Monitor         Signal
+Latest Signal   -26 dbm
+Min. Signal 	-84 dbm
+Max. Signal 	-24 dbm
 
 2025-08-11 01:53:45 PM /srv/samba/shared/ OPEN Unscientific_Data_24GHZ.bin
 2025-08-11 01:53:45 PM /srv/samba/shared/ ACCESS Unscientific_Data_24GHZ.bin
@@ -636,25 +628,21 @@ Max. Signal	-24 dbm
 2025-08-11 01:55:17 PM /srv/samba/shared/ ACCESS Unscientific_Data_24GHZ.bin
 2025-08-11 01:55:19 PM /srv/samba/shared/ CLOSE_NOWRITE,CLOSE Unscientific_Data_24GHZ.bin
 
+------------------------------------------------------------------------------------------------------------------------
+
 Test 3 wall 2.4
 
-Server
+Server:
+Monitor         Signal
+Latest Signal   -36 dbm
+Min. Signal 	-76 dbm
+Max. Signal 	-16 dbm
 
-Signal
-Monitor Signal
-Monitor
-Latest Signal	-36 dbm
-Min. Signal	-76 dbm
-Max. Signal	-16 dbm
-
-Client
-
-Signal
-Monitor Signal
-Monitor
-Latest Signal	-29 dbm
-Min. Signal	-85 dbm
-Max. Signal	-24 dbm
+Client:
+Monitor         Signal
+Latest Signal   -29 dbm
+Min. Signal 	-85 dbm
+Max. Signal 	-24 dbm
 
 
 2025-08-11 01:59:35 PM /srv/samba/shared/ OPEN Unscientific_Data_24GHZ.bin
