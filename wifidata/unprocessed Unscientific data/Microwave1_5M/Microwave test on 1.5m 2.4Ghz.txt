@@ -5,8 +5,8 @@ Signal
 Monitor Signal	
 Monitor
 Latest Signal -34 dbm
-Min. Signal	-89 dbm
-Max. Signal	-13 dbm
+Min. Signal	-87 dbm
+Max. Signal	-11 dbm
 
 
 Client:
@@ -643,8 +643,8 @@ Signal
 Monitor Signal	
 Monitor
 Latest Signal -28 dbm
-Min. Signal	-89 dbm
-Max. Signal	-13 dbm
+Min. Signal	-90 dbm
+Max. Signal	-15 dbm
 
 
 Client:
