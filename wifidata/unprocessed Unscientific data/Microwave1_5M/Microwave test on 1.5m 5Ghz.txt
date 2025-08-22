@@ -516,8 +516,8 @@ Test 2
 Server
 Monitor Signal	Monitor
 Latest Signal	-32 dbm
-Min. Signal	-65 dbm
-Max. Signal	-29
+Min. Signal	-63 dbm
+Max. Signal	-26 dbm
 
 Client
 Monitor Signal
@@ -783,7 +783,7 @@ Monitor Signal
 Monitor
 Latest Signal	-31 dbm
 Min. Signal	-65 dbm
-Max. Signal	-29
+Max. Signal	-28 dbm
 
 Client
 Signal
