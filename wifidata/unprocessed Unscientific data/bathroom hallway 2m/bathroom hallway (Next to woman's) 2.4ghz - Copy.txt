@@ -1,0 +1,114 @@
+bathroom hallway (Next to woman's) test 1
+
+Server:
+
+Monitor Signal	
+Latest Signal	-70 dbm
+Min. Signal	-79 dbm
+Max. Signal	-50 dbm
+
+
+Client:
+Monitor Signal	
+Latest Signal	-73 dbm
+Min. Signal	-88 dbm
+Max. Signal	-49 dbm
+
+
+
+
+2025-08-26 11:09:07 AM /srv/samba/shared/ OPEN Unscientific_Data_24GHZ.bin
+2025-08-26 11:09:07 AM /srv/samba/shared/ ACCESS Unscientific_Data_24GHZ.bin
+2025-08-26 11:10:20 AM /srv/samba/shared/ ACCESS Unscientific_Data_24GHZ.bin
+2025-08-26 11:10:20 AM /srv/samba/shared/ ACCESS Unscientific_Data_24GHZ.bin
+2025-08-26 11:10:20 AM /srv/samba/shared/ ACCESS Unscientific_Data_24GHZ.bin
+2025-08-26 11:11:03 AM /srv/samba/shared/ ACCESS Unscientific_Data_24GHZ.bin
+2025-08-26 11:11:04 AM /srv/samba/shared/ ACCESS Unscientific_Data_24GHZ.bin
+2025-08-26 11:11:04 AM /srv/samba/shared/ ACCESS Unscientific_Data_24GHZ.bin
+2025-08-26 11:11:04 AM /srv/samba/shared/ ACCESS Unscientific_Data_24GHZ.bin
+2025-08-26 11:14:11 AM /srv/samba/shared/ ACCESS Unscientific_Data_24GHZ.bin
+2025-08-26 11:14:11 AM /srv/samba/shared/ ACCESS Unscientific_Data_24GHZ.bin
+2025-08-26 11:14:11 AM /srv/samba/shared/ ACCESS Unscientific_Data_24GHZ.bin
+2025-08-26 11:14:11 AM /srv/samba/shared/ ACCESS Unscientific_Data_24GHZ.bin
+2025-08-26 11:18:32 AM /srv/samba/shared/ ACCESS Unscientific_Data_24GHZ.bin
+2025-08-26 11:18:32 AM /srv/samba/shared/ ACCESS Unscientific_Data_24GHZ.bin
+2025-08-26 11:18:32 AM /srv/samba/shared/ ACCESS Unscientific_Data_24GHZ.bin
+2025-08-26 11:18:32 AM /srv/samba/shared/ ACCESS Unscientific_Data_24GHZ.bin
+2025-08-26 11:19:54 AM /srv/samba/shared/ ACCESS Unscientific_Data_24GHZ.bin
+2025-08-26 11:19:54 AM /srv/samba/shared/ ACCESS Unscientific_Data_24GHZ.bin
+2025-08-26 11:19:54 AM /srv/samba/shared/ ACCESS Unscientific_Data_24GHZ.bin
+2025-08-26 11:19:54 AM /srv/samba/shared/ ACCESS Unscientific_Data_24GHZ.bin
+2025-08-26 11:21:23 AM /srv/samba/shared/ ACCESS Unscientific_Data_24GHZ.bin
+2025-08-26 11:21:23 AM /srv/samba/shared/ ACCESS Unscientific_Data_24GHZ.bin
+2025-08-26 11:21:23 AM /srv/samba/shared/ ACCESS Unscientific_Data_24GHZ.bin
+2025-08-26 11:21:23 AM /srv/samba/shared/ ACCESS Unscientific_Data_24GHZ.bin
+2025-08-26 11:23:59 AM /srv/samba/shared/ ACCESS Unscientific_Data_24GHZ.bin
+2025-08-26 11:23:59 AM /srv/samba/shared/ ACCESS Unscientific_Data_24GHZ.bin
+2025-08-26 11:23:59 AM /srv/samba/shared/ ACCESS Unscientific_Data_24GHZ.bin
+2025-08-26 11:23:59 AM /srv/samba/shared/ ACCESS Unscientific_Data_24GHZ.bin
+2025-08-26 11:26:51 AM /srv/samba/shared/ ACCESS Unscientific_Data_24GHZ.bin
+2025-08-26 11:26:51 AM /srv/samba/shared/ ACCESS Unscientific_Data_24GHZ.bin
+2025-08-26 11:26:51 AM /srv/samba/shared/ ACCESS Unscientific_Data_24GHZ.bin
+2025-08-26 11:26:52 AM /srv/samba/shared/ ACCESS Unscientific_Data_24GHZ.bin
+2025-08-26 11:29:29 AM /srv/samba/shared/ ACCESS Unscientific_Data_24GHZ.bin
+2025-08-26 11:29:29 AM /srv/samba/shared/ ACCESS Unscientific_Data_24GHZ.bin
+2025-08-26 11:29:29 AM /srv/samba/shared/ ACCESS Unscientific_Data_24GHZ.bin
+2025-08-26 11:29:29 AM /srv/samba/shared/ ACCESS Unscientific_Data_24GHZ.bin
+2025-08-26 11:31:19 AM /srv/samba/shared/ ACCESS Unscientific_Data_24GHZ.bin
+2025-08-26 11:31:19 AM /srv/samba/shared/ ACCESS Unscientific_Data_24GHZ.bin
+2025-08-26 11:31:19 AM /srv/samba/shared/ ACCESS Unscientific_Data_24GHZ.bin
+2025-08-26 11:31:19 AM /srv/samba/shared/ ACCESS Unscientific_Data_24GHZ.bin
+2025-08-26 11:34:11 AM /srv/samba/shared/ ACCESS Unscientific_Data_24GHZ.bin
+2025-08-26 11:34:11 AM /srv/samba/shared/ ACCESS Unscientific_Data_24GHZ.bin
+2025-08-26 11:34:11 AM /srv/samba/shared/ ACCESS Unscientific_Data_24GHZ.bin
+2025-08-26 11:34:11 AM /srv/samba/shared/ ACCESS Unscientific_Data_24GHZ.bin
+2025-08-26 11:40:59 AM /srv/samba/shared/ ACCESS Unscientific_Data_24GHZ.bin
+2025-08-26 11:40:59 AM /srv/samba/shared/ ACCESS Unscientific_Data_24GHZ.bin
+2025-08-26 11:40:59 AM /srv/samba/shared/ ACCESS Unscientific_Data_24GHZ.bin
+2025-08-26 11:40:59 AM /srv/samba/shared/ ACCESS Unscientific_Data_24GHZ.bin
+2025-08-26 11:42:38 AM /srv/samba/shared/ ACCESS Unscientific_Data_24GHZ.bin
+2025-08-26 11:42:38 AM /srv/samba/shared/ ACCESS Unscientific_Data_24GHZ.bin
+2025-08-26 11:42:38 AM /srv/samba/shared/ ACCESS Unscientific_Data_24GHZ.bin
+2025-08-26 11:42:38 AM /srv/samba/shared/ ACCESS Unscientific_Data_24GHZ.bin
+2025-08-26 11:46:27 AM /srv/samba/shared/ ACCESS Unscientific_Data_24GHZ.bin
+2025-08-26 11:46:27 AM /srv/samba/shared/ ACCESS Unscientific_Data_24GHZ.bin
+2025-08-26 11:46:27 AM /srv/samba/shared/ ACCESS Unscientific_Data_24GHZ.bin
+2025-08-26 11:46:27 AM /srv/samba/shared/ ACCESS Unscientific_Data_24GHZ.bin
+2025-08-26 11:54:11 AM /srv/samba/shared/ CLOSE_NOWRITE,CLOSE Unscientific_Data_24GHZ.bin
+
+-------------------------------------------------------------------------------------------
+
+
+bathroom hallway (Next to woman's) test 2
+
+Server:
+
+
+
+Client:
+
+
+
+
+
+
+
+
+-------------------------------------------------------------------------------------------
+
+bathroom hallway (Next to woman's) test 3
+
+Server:
+
+
+
+Client:
+
+
+
+
+
+
+-------------------------------------------------------------------------------------------
+
+
