@@ -1,0 +1,83 @@
+type of device:
+Custom from hardware guys
+
+Server:
+    CPU: 12th Gen Intel(R) Core(TM) i5-12400
+
+    RAM: 1 stick 16GiB DIMM DDR4 Synchronous 3200 MHz (0.3 ns)
+
+    Network card:
+    01:00.0 Network controller [0280]: Realtek Semiconductor Co., Ltd. Device [10ec:b851]
+    02:00.0 Network controller [0280]: Intel Corporation Wi-Fi 7(802.11be) AX1775*/AX1790*/BE20*/BE401/BE1750* 2x2 [8086:272b] (rev 1a)
+
+Client:
+    CPU: Intel(R) Core(TM) i5-4460  CPU @ 3.20GHz
+
+    RAM: 2 sticks 8GiB DIMM DDR3 Synchronous 1600 MHz (0.6 ns)
+
+    Network card:
+    02:00.0 Network controller [0280]: Intel Corporation Wi-Fi 7(802.11be) AX1775*/AX1790*/BE20*/BE401/BE1750* 2x2 [8086:272b] (rev 1a)
+    03:00.0 Network controller [0280]: Intel Corporation Wi-Fi 7(802.11be) AX1775*/AX1790*/BE20*/BE401/BE1750* 2x2 [8086:272b] (rev 1a)
+
+-------------------------------------------------------------------
+
+routers hardware
+
+    Asus BE9700 Tri-band RT-BE92U
+    Tp-link Dual-Band Archer BE230
+
+-------------------------------------------------------------------
+
+router specs
+
+Tp-link Dual-Band Archer BE230
+    used 2.4 and 5ghz band
+    Wifi 6
+
+Asus BE9700 Tri-band RT-BE92U
+    using 6ghz band
+    Wifi 7
+
+-------------------------------------------------------------------
+
+OS version
+
+    Server:
+    Distributor ID: Ubuntu
+    Description:    Ubuntu 25.04
+    Release:        25.04
+    Codename:       plucky
+
+    Client:
+    Distributor ID: Ubuntu
+    Description:    Ubuntu 24.04.2 LTS
+    Release:        24.04
+    Codename:       noble
+
+-------------------------------------------------------------------
+
+software used
+Client
+OpenSSH_9.6p1 Ubuntu-3ubuntu13.13, OpenSSL 3.0.13 30 Jan 2024
+
+SMB version
+Version 4.19.5-Ubuntu
+
+SMB client
+Version 4.19.5-Ubuntu
+
+Server:
+OpenSSH_9.9p1 Ubuntu-3ubuntu3.1, OpenSSL 3.4.1 11 Feb 2025
+
+SMB version
+Version 4.21.4-Ubuntu-4.21.4+dfsg-1ubuntu3.3
+
+Package: inotify-tools
+Version: 4.23.9.0-2
+
+we were going to use adhoc but found out it does not work due to lack of support and not using infrastructure network
+
+used kismet to see chanels and signel strength on endpoint and server.
+
+-------------------------------------------------------------------
+
