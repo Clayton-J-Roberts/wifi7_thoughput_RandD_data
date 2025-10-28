@@ -1,10 +1,10 @@
 # 🛰️ WiFi 7 Throughput R&D Data
 
 **Repository:** `wifi7_thoughput_RandD_data`  
-**Author:** [Clayton-J-Roberts](https://github.com/Clayton-J-Roberts)  
+**Author:** [Clayton-J-Roberts](https://github.com/Clayton-J-Roberts)  [James-Hodder](https://github.com/James-Hodder) [Andrei Mamaradlo](https://github.com/andreimama) [Iutoi tauafiafi-iutoi](https://github.com/Iutoi) [alvyn Beldua](https://github.com/alvyncb)
+
 **Project Type:** University R&D / Wireless Networking  
 **Topic:** Wi-Fi 7 (802.11be) Throughput Measurement and Analysis  
-**Licence:** *(Add your licence, e.g. MIT or Creative Commons)*
 
 ---
 
@@ -18,13 +18,17 @@ The project’s goal is to measure and analyse **how distance, hardware setup, a
 ## 📂 Repository Structure
 wifi7_thoughput_RandD_data/
 │
+
 ├── .idea/ # IDE configuration files (JetBrains etc.)
+
 ├── wifidata/ # Folder containing raw and processed Wi-Fi test data
+
 ├── hardware and software configs.txt # Hardware and software configuration notes
+
 ├── iperf_viewer.py # Python script for parsing/visualising iPerf throughput data
+
 └── samba_monitor.sh # Shell script for monitoring Samba file-transfer throughput
 
-**
 ---
 
 ## ⚙️ Description of Files
@@ -57,12 +61,4 @@ Bash script used to:
 - Log transfer rates when testing file-copy performance between devices  
 
 ---
-
-## 🚀 Getting Started
-
-### 1. Clone the Repository
-```bash
-git clone https://github.com/Clayton-J-Roberts/wifi7_thoughput_RandD_data.git
-cd wifi7_thoughput_RandD_data
-**
 
