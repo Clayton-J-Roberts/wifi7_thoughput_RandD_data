@@ -16,6 +16,13 @@ The project’s goal is to measure and analyse **how distance, hardware setup, a
 ---
 
 ## 📂 Repository Structure
+wifi7_thoughput_RandD_data/
+│
+├── .idea/ # IDE configuration files (JetBrains etc.)
+├── wifidata/ # Folder containing raw and processed Wi-Fi test data
+├── hardware and software configs.txt # Hardware and software configuration notes
+├── iperf_viewer.py # Python script for parsing/visualising iPerf throughput data
+└── samba_monitor.sh # Shell script for monitoring Samba file-transfer throughput
 
 **
 ---
